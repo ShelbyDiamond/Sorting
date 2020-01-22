@@ -1,24 +1,16 @@
 # TO-DO: Complete the selection_sort() function below
 
-my_list_a = [7, 4, 6, 1, 7, 2, 76, -250]
-my_list_b = [436, 22, 2, 90, 23, 19, -7]
-
 def selection_sort(arr):
     # loop through n-1 elements
-    for i in range(0, len(arr) - 1): # O(n)
+    for i in range(0, len(arr) - 1):
         cur_index = i
         smallest_index = cur_index
 
-        # After first iteration, smallest should be on left side of the list.
-        # So we can start counting from wherever 'i' is (and thus compare to i+1)
-        for j in range(i+1, len(arr)): # O(n)
+        for j in range(i+1, len(arr)):
             if arr[j] < arr[i]:
                 arr[i], arr[j] = arr[j], arr[i]
-    return arr# --> O(n^2)
+    return arr
 
-
-print(selection_sort(my_list_a))
-print(selection_sort(my_list_b))
 # TO-DO:  implement the Bubble Sort function below
 def bubble_sort( arr ):
     # The highest number will always end up at the end after each iteration through the list
