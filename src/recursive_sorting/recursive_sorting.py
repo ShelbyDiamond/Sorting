@@ -1,15 +1,6 @@
 # TO-DO: complete the help function below to merge 2 sorted arrays
 import math
 
-def merge(arrA, arrB):
-    elements = len(arrA) + len(arrB)
-    merged_arr = [0] * elements
-    # TO-DO
-    
-    return merged_arr
-
-
-# TO-DO: implement the Merge Sort function below USING RECURSION
 def merge_sort(arr):
     if(len(arr)<1):
         return [];
@@ -44,7 +35,7 @@ def merge_in_place(arr, start, mid, end):
     # Due to time constraints, I think I'm leaving this one alone :(
     return arr
 
-def merge_sort_in_place(arr, l, r): 
+def merge_sort_in_place(arr, l, r):
     # TO-DO
 
     return arr
@@ -53,5 +44,8 @@ def merge_sort_in_place(arr, l, r):
 # STRETCH: implement the Timsort function below
 # hint: check out https://github.com/python/cpython/blob/master/Objects/listsort.txt
 def timsort( arr ):
+
+    # So I've done a bit of research and doing a legit timsort looks like more of a weekend project than something I can accomplish in one night.
+    # There's a lot of logic involved and since I'll be gone for a lot of tomorrow, I'm going to put this aside for now and come back to it later.
 
     return arr
